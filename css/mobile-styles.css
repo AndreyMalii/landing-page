@@ -7,6 +7,16 @@
     padding: 85px 18px 61px;
   }
 
+  .main-header {
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 132.83%;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
   .button-main {
     margin-bottom: 26px;
     width: 100%;
@@ -70,6 +80,7 @@
 
   .text-desktop-none {
     display: block;
+    font-size: 14px;
   }
 
   .projects-paragraf {

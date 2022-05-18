@@ -32,11 +32,16 @@ button {
   border: 0;
   outline: 0;
   transition: all 0.5s ease;
+  background: #e3b873;
+  color: white;
 }
 
 button:hover {
-  background-color: #e3b873;
+  background-color: transparent;
   color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .button-navigation {
@@ -47,7 +52,6 @@ button:hover {
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
-  color: black;
   padding: 13px 33px;
 }
 
@@ -59,7 +63,6 @@ button:hover {
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
-  color: black;
   padding: 13px 33px;
   margin-right: 20px;
 }
@@ -457,6 +460,10 @@ button:hover {
   height: 51px;
 }
 
+.button-online-desc:hover {
+  color: #181818;
+}
+
 .button-online-mb {
   display: none;
 }
@@ -545,6 +552,10 @@ button:hover {
   padding-bottom: -28px;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   text-transform: uppercase;
+}
+
+.price-button:hover {
+  color: #181818;
 }
 
 .price-info {
