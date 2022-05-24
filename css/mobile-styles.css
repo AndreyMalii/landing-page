@@ -260,6 +260,7 @@
 
   .input-checkbox {
     margin-bottom: 62px;
+    display: inline-block;
   }
 
   .price-container {

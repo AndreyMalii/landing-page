@@ -27,19 +27,19 @@ body {
   margin-top: 0;
 }
 
-button {
+.button {
   border-radius: 2px;
-  border: 0;
+  border: 1px solid transparent;
   outline: 0;
   transition: all 0.5s ease;
   background: #e3b873;
   color: white;
 }
 
-button:hover {
+.button:hover {
   background-color: transparent;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border-color: #ffffff;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -469,9 +469,36 @@ button:hover {
 }
 
 .input-checkbox {
-  display: inline-block;
+  display: none;
   text-align: center;
   margin-top: 33px;
+}
+
+.fake-box {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.fake {
+  border: 1px solid black;
+}
+
+.fake-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url("../images/checkbox.svg");
+  opacity: 0;
+  transition: ease 0.3s;
+}
+
+.input-checkbox:checked + .fake-box::before {
+  opacity: 1;
 }
 
 .input-box {
@@ -793,6 +820,7 @@ input.leave-text::-ms-input-placeholder {
   color: #ffffff;
   transition: all 0.3s ease;
   background: none;
+  border: 0;
 }
 
 .fantasies-style-button:hover {
